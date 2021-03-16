@@ -16,7 +16,6 @@ db.mongoose.connect(`mongodb://${dbConfig.USERNAME}:${dbConfig.PASSWORD}@${dbCon
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
-    db.mongoose.set('useFindAndModify', false);
     console.log("Successfully connected to application Database!");    
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
