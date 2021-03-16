@@ -1,5 +1,5 @@
 module.exports = {
-    HOST: "localhost",
+    HOST: "mymongo",
     PORT: 27017,
     DB: "cs6313Assignment2Db",
     USERNAME: "sessionUser",
