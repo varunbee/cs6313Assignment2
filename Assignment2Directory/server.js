@@ -20,7 +20,6 @@ db.mongoose.connect(`mongodb://${dbConfig.USERNAME}:${dbConfig.PASSWORD}@${dbCon
     console.log("Successfully connected to application Database!");    
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
-    process.exit();
 });
 
 // create express app
