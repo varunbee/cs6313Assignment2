@@ -1,5 +1,5 @@
 module.exports = {
-    HOST: "90514c49dca4",
+    HOST: "172.17.0.3",
     PORT: 27017,
     DB: "cs6313Assignment2Db",
     USERNAME: "sessionUser",
