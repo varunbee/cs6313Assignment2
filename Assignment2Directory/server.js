@@ -13,7 +13,7 @@ const fs = require('fs').promises;
 const twoMinutes = 120000
 
 // Configuring the database
-const env = "DEV"
+const env = "PROD"
 
 var dbConfig = require('./config/db.dev.config.js')
 
