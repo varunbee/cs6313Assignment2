@@ -10,10 +10,10 @@ const sessionConfig = require('./config/session.config')
 const mySecret = sessionConfig.SECRET;
 const path = require('path');
 const fs = require('fs').promises;
-const twoMinutes = 120000
+const cookieAge = 10800000
 
 // Configuring the database
-const env = "PROD"
+const env = "DEV"
 
 var dbConfig = require('./config/db.dev.config.js')
 
@@ -51,7 +51,7 @@ app.use(session({
     saveUninitialized: true,
     secret: mySecret,
     store: MongoStore.create({mongoUrl: mongoConnString, dbName: dbConfig.DB, collectionName: sessionConfig.COLLECTION_NAME}),
-    cookie: { secure: true, maxAge: 120000 }
+    cookie: { secure: false, maxAge: cookieAge }
   }));
 
 app.use(function (req, res, next) {

@@ -32,8 +32,8 @@ const requestNotificationPermission = async () => {
 }
 const main = async () => {
     check();
-    const swRegistration = await registerServiceWorker();
 	const permission =  await requestNotificationPermission();
+    const swRegistration = await registerServiceWorker();
 	// showLocalNotification('CS6313 Title of the message', 'CS6313 Assignment 2 Task 2 message', swRegistration);
 }
 // const main = async () => { //notice I changed main to async function so that I can use await for registerServiceWorker
