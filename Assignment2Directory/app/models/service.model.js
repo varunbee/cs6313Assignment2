@@ -13,6 +13,6 @@ const serviceSchema = mongoose.Schema({
     serviceAddedTime: Number,
 });
 
-var collectionName = 'serviceStore'
+var collectionName = 'servicesStore'
 
-module.exports = mongoose.model('serviceStore', serviceSchema, collectionName);
+module.exports = mongoose.model('servicesStore', serviceSchema, collectionName);

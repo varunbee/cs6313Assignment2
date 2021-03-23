@@ -1,8 +1,8 @@
 var CronJob = require('cron').CronJob;
 const serviceModel = require('../app/models/service.model.js');
 
-//Every hour
-var updateCurrency = new CronJob('1 * * * * *', function() {
+//Every minute
+var updateCurrency = new CronJob('0 * * * * *', function() {
     //console.log("CRON run.")
     serviceModel.find({"active": true})
     .then(services => {
